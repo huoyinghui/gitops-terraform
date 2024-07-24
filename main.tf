@@ -10,3 +10,10 @@ module "network" {
 module "security_group" {
   source = "./modules/security_group" 
 }
+
+# module "tke" {
+#   source = "./modules/tke"
+#   sg_id = ""
+#   vpc_id = ""
+#   subnet_id = ""
+# }

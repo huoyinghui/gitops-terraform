@@ -1,6 +1,6 @@
 variable "available_zone" {
   type        = string
-  default     = "ap-guangzhou-3"
+  default     = "ap-guangzhou"
   description = "Specify available zone of VPC subnet and TKE nodes."
 }
 
@@ -27,7 +27,7 @@ variable "cluster_name" {
 
 variable "cluster_version" {
   type        = string
-  default     = "1.22.5"
+  default     = "1.28.3"
   description = "Cluster kubernetes version."
 }
 

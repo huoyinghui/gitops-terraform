@@ -11,9 +11,9 @@ module "security_group" {
   source = "./modules/security_group" 
 }
 
-# module "tke" {
-#   source = "./modules/tke"
-#   sg_id = ""
-#   vpc_id = ""
-#   subnet_id = ""
-# }
+module "tke" {
+  source = "./modules/tke"
+  sg_id = "sg-l32vlzgtj"
+  vpc_id = "vpc-qe8tt97x"
+  subnet_id = "subnet-7vokjnrq"
+}
